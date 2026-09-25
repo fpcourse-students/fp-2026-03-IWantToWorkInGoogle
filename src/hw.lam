@@ -149,9 +149,7 @@ task 3.1 (типизация по Чёрчу: аппликации комбин�
 -- (\x:((a -> a) -> b -> a -> a). x) (\x:(a -> a) y:b. x) (\x:a. x) : b -> a -> a.
 
 ski := S K I
--- (\x:(a -> a) y:b . x) (\x:a. x) 
-church ski = (\x:((a -> a) -> b -> a -> a). x) (\x:(a -> a) y:b. x) (\x:a. x)
-church ski = (\x:(((a -> a) -> b) -> a -> a). x) (\x:(a -> a) y:b. x) (\x:a. x)
+church ski = ...
 
 skk := S K K
 church skk = ...
